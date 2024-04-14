@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}Главная{% endblock %}
+</head>
+
+<body>
+  {% block upload %}
+
+  <h2 class="login-header">Загрузить файл</h2>
+  <form class="login-container" id="up" action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p><input type="file" name="file_upload" multiple></p>
+    <p><button type="submit" id="submitButton" value="Log in">Отправить</button></p>
+  </form>
+
+  <form class="idata" id="pt" action="" method="get">
+    <h2 class="idata-header">Результаты</h2>
+    <div class="idata-container" id="dataDisplay">{% if non_cleared == 15 %} {% for item in values %} <p>{{ item }}</p> {% endfor %}{% endif %}</div>
+    <button class="btn" type="submit" id="clearButton">Очистить результаты</button>
+  </form>
+
+<script>
+    console.log({{ non_cleared }});
+    function clearDataDisplay(event) {
+        event.preventDefault();
+        var dataDisplay = document.getElementById("dataDisplay");
+        dataDisplay.innerHTML = "";
+        //location.reload(true);
+    }
+    document.getElementById("clearButton").addEventListener("click", clearDataDisplay);
+</script>
+
+  {% endblock %}
+</body>
+</html>

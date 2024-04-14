@@ -1,0 +1,91 @@
+{% extends 'main/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}О нас{% endblock %}
+</head>
+
+<body>
+  {% block geo %}
+    <div class="card">
+      <div class="card__header">
+        <img src="{% static 'img/kursk.jpg' %}" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-blue">География</span>
+        <p>Наша команда была основана в Курске – городе с богатой и древней историей. В 2032 году город отпразднует своё тысячелетие.</p>
+      </div>
+      <div class="card__footer">
+        <div class="user">
+          <img src="{% static 'img/avatar.png' %}" alt="user__image" class="user__image">
+          <div class="user__info">
+            <h5>Александр Бондарев</h5>
+            <small>Опубликовано: 12.04.24</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+  {% block history %}
+    <div class="card">
+      <div class="card__header">
+        <img src="{% static 'img/hack.jpg' %}" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-orange">История</span>
+        <p>Путь в проекте «Цифровой прорыв» наша команда начала в 2021 году, но под другим названием.
+        Нынешний состав мы сформировали в 2024 году.</p>
+      </div>
+      <div class="card__footer">
+        <div class="user">
+          <img src="{% static 'img/avatar.png' %}" alt="user__image" class="user__image">
+          <div class="user__info">
+            <h5>Александр Бондарев</h5>
+            <small>Опубликовано: 12.04.24</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+  {% block team1 %}
+    <div class="card">
+      <div class="card__header">
+        <img src="{% static 'img/nikolay.jpg' %}" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-red">Наша команда</span>
+        <h4>Николай Соколов<br>
+        <a class="social-icon__link" href="https://vk.com/kolololololol"><i class="fa-brands fa-vk"></i></a>
+        <a class="social-icon__link" href="https://vk.com/kolololololol"><i class="fa-brands fa-telegram"></i></a></h4>
+      </div>
+    </div>
+  {% endblock %}
+  {% block team2 %}
+    <div class="card">
+      <div class="card__header">
+        <img src="{% static 'img/misha.jpg' %}" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-red">Наша команда</span>
+        <h4>Михаил Скорняков<br>
+        <a class="social-icon__link" href="https://vk.com/kolololololol"><i class="fa-brands fa-vk"></i></a>
+        <a class="social-icon__link" href="https://vk.com/kolololololol"><i class="fa-brands fa-telegram"></i></a></h4>
+      </div>
+    </div>
+  {% endblock %}
+  {% block team3 %}
+    <div class="card">
+      <div class="card__header">
+        <img src="{% static 'img/alex.jpg' %}" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-red">Наша команда</span>
+        <h4>Александр Бондарев<br>
+        <a class="social-icon__link" href="https://vk.com/kolololololol"><i class="fa-brands fa-vk"></i></a>
+        <a class="social-icon__link" href="https://vk.com/kolololololol"><i class="fa-brands fa-telegram"></i></a></h4>
+      </div>
+    </div>
+  {% endblock %}
+</body>
+</html>

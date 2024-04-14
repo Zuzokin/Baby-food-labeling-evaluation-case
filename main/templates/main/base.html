@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+  <title>{% block title %}{% endblock %}</title>
+  <script src="https://kit.fontawesome.com/c6210ea13a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'img/icon.png' %}">
+</head>
+
+<body>
+  <div class="particle-container">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <ul class="nav">
+    <li><a href="{% url 'home' %}" data-hover="Главная">Главная</a></li>
+    <li><a href="{% url 'about' %}" data-hover="О нас">О нас</a></li>
+    <li><a href="https://hacks-ai.ru/" data-hover="Цифровой прорыв">Цифровой прорыв</a></li>
+  </ul>
+
+  <img class="img" src="{% static 'img/logo.png' %}">
+
+  <div class="login">
+    {% block upload %}{% endblock %}
+  </div>
+
+  <div class="container-first">
+    {% block geo %}{% endblock %}
+  </div>
+
+  <div class="container-second">
+    {% block history %}{% endblock %}
+  </div>
+
+  <div class="container-third">
+    {% block team1 %}{% endblock %}
+  </div>
+
+  <div class="container-fourth">
+    {% block team2 %}{% endblock %}
+  </div>
+
+  <div class="container-fifth">
+    {% block team3 %}{% endblock %}
+  </div>
+</body>
+
+<footer>
+  <div class="footer">
+    <div class="row">
+      <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://vk.com/a.bondarev">
+          <i class="fa-brands fa-vk"></i>
+      </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://t.me/al_sanchoo">
+          <i class="fa-brands fa-telegram"></i>
+      </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/Zuzokin">
+          <i class="fa-brands fa-github"></i>
+      </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://discord.gg/FBGSk4Zt">
+          <i class="fa-brands fa-discord"></i>
+      </a></li>
+    </ul>
+    </div>
+
+    <div class="row">
+      <i class="fa-regular fa-copyright"></i>
+      220volt Development Team | 2024 | Все права защищены
+    </div>
+  </div>
+</footer>
+</html>

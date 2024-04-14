@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./images/220voltlogo.png" alt="Логотип проекта" width="200" style="display: inline-block; vertical-align: middle; margin-right: 10px;"/>  <br/>
+    <img src="./readme_images/220voltlogo.png" alt="Логотип проекта" width="200" style="display: inline-block; vertical-align: middle; margin-right: 10px;"/>  <br/>
     <H2 align="center">Кейс: Оценка маркировки и маркетинга продуктов детского питания</H2> 
 </p>
 
@@ -13,6 +13,7 @@
 * YoloV8 Large (Обнаружение областей с полезной информацией на этикетке продукта)
 ![изображение](readme_images/YOLO.png)
 * Пример распознанного изображения
+  
 ![изображение](readme_images/YOLOprediction.jpg)
 
 * EasyOCR (Оптическое распознавание символов)
